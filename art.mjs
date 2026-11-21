@@ -159,6 +159,53 @@ fns.helix = () =>
   <rect x="62" y="30" width="38" height="11" fill="${INK}"/>
   <rect x="62" y="56" width="38" height="11" fill="${RED}"/>`);
 
+// 16. A cyclone, drawn as one continuous spiral of thick white bands winding into
+// a large red eye, over a flat coastline with two palms bent the same way.
+fns.cyclone = () =>
+  frame(`
+  <rect x="0" y="0" width="160" height="96" fill="${INK}"/>
+  <rect x="0" y="72" width="160" height="24" fill="${GOLD}"/>
+  <g transform="translate(96 40)">
+    <path d="M0 0 C14 0 22 9 22 19 C22 31 12 39 0 39 C-16 39 -28 28 -28 13
+             C-28 -5 -14 -19 4 -19 C26 -19 42 -4 42 17 C42 40 24 56 0 56"
+          fill="none" stroke="${PAPER}" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="12" fill="${RED}"/>
+    <circle cx="0" cy="0" r="4" fill="${INK}"/>
+  </g>
+  <path d="M14 72 L14 48" stroke="${PAPER}" stroke-width="5"/>
+  <path d="M14 48 q13 -6 21 1" stroke="${PAPER}" stroke-width="5" fill="none"/>
+  <path d="M32 72 L32 56" stroke="${PAPER}" stroke-width="5"/>
+  <path d="M32 56 q12 -5 18 2" stroke="${PAPER}" stroke-width="5" fill="none"/>`);
+
+// 17. A bar chart of bars falling away left to right, the last one long and red:
+// a rout, unmistakably a decline rather than a rise.
+fns.rout = () =>
+  frame(`
+  <rect x="0" y="0" width="160" height="96" fill="${PAPER}"/>
+  <rect x="10" y="12" width="20" height="68" fill="${INK}"/>
+  <rect x="38" y="26" width="20" height="54" fill="${INK}"/>
+  <rect x="66" y="38" width="20" height="42" fill="${INK}"/>
+  <rect x="94" y="48" width="20" height="32" fill="${INK}"/>
+  <rect x="122" y="58" width="20" height="22" fill="${RED}"/>
+  <rect x="6" y="80" width="148" height="7" fill="${INK}"/>`);
+
+// 18. Two delegations facing each other across a table, a red document between
+// them and a flag over each side — two parties concluding a deal.
+fns.reset = () =>
+  frame(`
+  <rect x="0" y="0" width="160" height="96" fill="${PAPER}"/>
+  <rect x="0" y="84" width="160" height="12" fill="${INK}"/>
+  <rect x="6" y="10" width="34" height="22" fill="${RED}"/>
+  <rect x="120" y="10" width="34" height="22" fill="${INK}"/>
+  <rect x="8" y="46" width="12" height="26" fill="${INK}"/>
+  <circle cx="14" cy="40" r="8" fill="${INK}"/>
+  <rect x="140" y="46" width="12" height="26" fill="${INK}"/>
+  <circle cx="146" cy="40" r="8" fill="${INK}"/>
+  <rect x="30" y="70" width="100" height="9" fill="${INK}"/>
+  <rect x="58" y="56" width="44" height="14" fill="${RED}"/>
+  <rect x="8" y="58" width="20" height="12" fill="${INK}"/>
+  <rect x="132" y="58" width="20" height="12" fill="${INK}"/>`);
+
 // 14. A ballot paper going into the slot of a box, a mountain range behind.
 fns.ballot = () =>
   frame(`

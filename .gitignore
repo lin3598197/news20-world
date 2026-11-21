@@ -3,3 +3,5 @@ out/
 .chrome-verify/
 s300c.png
 s512c.png
+.chrome-profile/
+*.svg
