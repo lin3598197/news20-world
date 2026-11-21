@@ -62,7 +62,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#f4f0e6;color:#1
   border-right:1px solid #c9c1ae;padding:0 2px}
 .numbers .n:last-child{border-right:0}
 .numbers .v{font-size:23px;font-weight:700;line-height:23px;letter-spacing:-.6px;white-space:nowrap}
-.numbers .lb{font-family:"Segoe UI",Arial,sans-serif;font-size:10.6px;line-height:11.6px;color:#b21e22;
+.numbers .lb{font-family:"Segoe UI",Arial,sans-serif;font-size:9px;line-height:10.4px;color:#b21e22;
   text-align:center;max-width:100%;height:21px;overflow:visible}
 
 .leads{height:${B.leads}px;display:flex;padding:4px 14px 4px;gap:14px;border-bottom:3px solid #12100e}
@@ -90,9 +90,9 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#f4f0e6;color:#1
   margin-bottom:2px;display:flex;justify-content:space-between}
 .bh span{color:#12100e;letter-spacing:1px}
 .bcols{columns:2;column-gap:16px;column-rule:1px solid #c9c1ae}
-.brief{font-family:"Segoe UI",Arial,sans-serif;font-size:15.5px;line-height:18px;
-  padding:2.4px 0 2.4px;border-bottom:1px dotted #b9b0a0;break-inside:avoid}
-.brief .rt{font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:.7px;
+.brief{font-family:"Segoe UI",Arial,sans-serif;font-size:11.2px;line-height:13.2px;
+  padding:2.2px 0 2.2px;border-bottom:1px dotted #b9b0a0;break-inside:avoid}
+.brief .rt{font-family:Arial,Helvetica,sans-serif;font-size:9.6px;font-weight:700;letter-spacing:.7px;
   background:#12100e;color:#f4f0e6;padding:0 3px;margin-right:4px}
 .brief .ot{color:#b21e22;font-weight:700}
 
