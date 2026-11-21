@@ -17,10 +17,10 @@ const B = {
   masthead: 88,
   tally: 15,
   numbers: 46,
-  leads: 225,
+  leads: 228,
   bandA: 160,
   bandB: 160,
-  briefs: 287,
+  briefs: 284,
   datecheck: 43,
   footer: 0,
 };
@@ -69,7 +69,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#f4f0e6;color:#1
 .lead{flex:1;min-width:0;display:flex;flex-direction:column}
 .lead .artbox{width:198px;height:118.8px;margin:0 auto;border:1px solid #12100e}
 .lead h2{font-size:26px;line-height:26px;font-weight:700;letter-spacing:-.6px;margin-top:4px}
-.lead .deck{font-family:"Segoe UI",Arial,sans-serif;font-size:9.8px;line-height:11.6px;margin-top:3px;
+.lead .deck{font-family:"Segoe UI",Arial,sans-serif;font-size:12px;line-height:13.4px;margin-top:3px;
   color:#3a352c}
 .lead .ft{font-family:Arial,Helvetica,sans-serif;font-size:9px;letter-spacing:1.1px;
   text-transform:uppercase;margin-top:3px;color:#b21e22;font-weight:700}
