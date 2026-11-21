@@ -17,10 +17,10 @@ const B = {
   masthead: 88,
   tally: 15,
   numbers: 46,
-  leads: 226,
-  bandA: 161,
-  bandB: 161,
-  briefs: 258,
+  leads: 230,
+  bandA: 162,
+  bandB: 162,
+  briefs: 279,
   datecheck: 56,
   footer: 13,
 };
@@ -90,9 +90,9 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#f4f0e6;color:#1
   margin-bottom:2px;display:flex;justify-content:space-between}
 .bh span{color:#12100e;letter-spacing:1px}
 .bcols{columns:2;column-gap:16px;column-rule:1px solid #c9c1ae}
-.brief{font-family:"Segoe UI",Arial,sans-serif;font-size:10.4px;line-height:11.8px;
-  padding:2.6px 0 2.4px;border-bottom:1px dotted #b9b0a0;break-inside:avoid}
-.brief .rt{font-family:Arial,Helvetica,sans-serif;font-size:9.4px;font-weight:700;letter-spacing:.7px;
+.brief{font-family:"Segoe UI",Arial,sans-serif;font-size:11.2px;line-height:13.2px;
+  padding:2.2px 0 2.2px;border-bottom:1px dotted #b9b0a0;break-inside:avoid}
+.brief .rt{font-family:Arial,Helvetica,sans-serif;font-size:9.6px;font-weight:700;letter-spacing:.7px;
   background:#12100e;color:#f4f0e6;padding:0 3px;margin-right:4px}
 .brief .ot{color:#b21e22;font-weight:700}
 
