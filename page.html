@@ -1,0 +1,301 @@
+<!doctype html><html><head><meta charset="utf-8"><title>FRIDAY 20 NOVEMBER 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+svg{display:block}
+html,body{width:1024px;height:1024px;overflow:hidden;background:#f4f0e6;color:#12100e;
+  font-family:"Times New Roman",Georgia,serif}
+#sheet{width:1024px;height:1024px;display:flex;flex-direction:column}
+.band{position:relative;overflow:hidden;border-bottom:1px solid #12100e;flex:none}
+
+.mast{height:88px;display:flex;align-items:center;padding:0 18px;gap:14px;
+  border-bottom:3px solid #12100e}
+.mast .l{flex:1;min-width:0}
+.kick{font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:2.1px;font-weight:700;
+  text-transform:uppercase;color:#b21e22;line-height:12px}
+.date{font-size:46px;line-height:50px;font-weight:700;letter-spacing:-1.4px;white-space:nowrap}
+.strap{font-family:"Segoe UI",Arial,sans-serif;font-size:9.6px;line-height:12px;margin-top:3px;
+  color:#2a2620;white-space:nowrap}
+.redblock{width:100px;height:62px;background:#b21e22;color:#f4f0e6;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;flex:none;font-family:Arial,Helvetica,sans-serif}
+.redblock .big{font-size:21px;font-weight:700;letter-spacing:1px;line-height:23px}
+.redblock .sm{font-size:15px;font-weight:700;letter-spacing:6px;line-height:18px;padding-left:6px}
+
+.tally{height:15px;display:flex;align-items:stretch;background:#12100e;color:#f4f0e6;
+  font-family:Arial,Helvetica,sans-serif;font-size:9.4px;letter-spacing:1px;text-transform:uppercase}
+.tally div{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;
+  border-right:1px solid rgba(244,240,230,.4)}
+.tally div:last-child{border-right:0}
+.tally b{font-size:11.5px;letter-spacing:0}
+
+.numbers{height:46px;display:flex;border-bottom:3px solid #12100e}
+.numbers .n{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border-right:1px solid #c9c1ae;padding:0 2px}
+.numbers .n:last-child{border-right:0}
+.numbers .v{font-size:23px;font-weight:700;line-height:23px;letter-spacing:-.6px;white-space:nowrap}
+.numbers .lb{font-family:"Segoe UI",Arial,sans-serif;font-size:9px;line-height:10.4px;color:#b21e22;
+  text-align:center;max-width:100%;height:21px;overflow:visible}
+
+.leads{height:226px;display:flex;padding:4px 14px 4px;gap:14px;border-bottom:3px solid #12100e}
+.lead{flex:1;min-width:0;display:flex;flex-direction:column}
+.lead .artbox{width:198px;height:118.8px;margin:0 auto;border:1px solid #12100e}
+.lead h2{font-size:26px;line-height:26px;font-weight:700;letter-spacing:-.6px;margin-top:4px}
+.lead .deck{font-family:"Segoe UI",Arial,sans-serif;font-size:9.8px;line-height:11.6px;margin-top:3px;
+  color:#3a352c}
+.lead .ft{font-family:Arial,Helvetica,sans-serif;font-size:9px;letter-spacing:1.1px;
+  text-transform:uppercase;margin-top:3px;color:#b21e22;font-weight:700}
+
+.bandrow{height:161px;display:flex;padding:3px 12px;gap:9px;border-bottom:3px solid #12100e}
+.bandrow.b{height:161px}
+.card{flex:1;min-width:0;display:flex;flex-direction:column}
+.card .artbox{width:148px;height:88.8px;margin:0 auto;border:1px solid #12100e}
+.card .tag{font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:700;letter-spacing:1.1px;
+  text-transform:uppercase;margin-top:2px;line-height:10px}
+.card h3{font-size:15.5px;line-height:16.4px;font-weight:700;margin-top:1px;letter-spacing:-.2px}
+.card .cft{font-family:Arial,Helvetica,sans-serif;font-size:9px;letter-spacing:.9px;
+  text-transform:uppercase;color:#b21e22;font-weight:700;margin-top:1px;line-height:10px}
+
+.briefs{height:258px;padding:2px 14px 2px;border-bottom:3px solid #12100e}
+.bh{font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:1.9px;
+  text-transform:uppercase;color:#b21e22;line-height:14px;border-bottom:1px solid #b21e22;
+  margin-bottom:2px;display:flex;justify-content:space-between}
+.bh span{color:#12100e;letter-spacing:1px}
+.bcols{columns:2;column-gap:16px;column-rule:1px solid #c9c1ae}
+.brief{font-family:"Segoe UI",Arial,sans-serif;font-size:10.4px;line-height:11.8px;
+  padding:2.6px 0 2.4px;border-bottom:1px dotted #b9b0a0;break-inside:avoid}
+.brief .rt{font-family:Arial,Helvetica,sans-serif;font-size:9.4px;font-weight:700;letter-spacing:.7px;
+  background:#12100e;color:#f4f0e6;padding:0 3px;margin-right:4px}
+.brief .ot{color:#b21e22;font-weight:700}
+
+.dc{height:56px;padding:3px 14px 3px 16px;border-left:7px solid #b21e22;
+  border-bottom:1px solid #12100e}
+.dc .dcr{font-family:Arial,Helvetica,sans-serif;font-size:9.4px;line-height:11.5px;font-weight:700;
+  margin-bottom:2px}
+.dc .cols{columns:2;column-gap:16px}
+.dc .ex{font-family:"Segoe UI",Arial,sans-serif;font-size:9px;line-height:11px}
+.dc .ex b{color:#b21e22}
+
+.foot{height:13px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 14px;font-family:Arial,Helvetica,sans-serif;font-size:9px;letter-spacing:1.2px;
+  text-transform:uppercase;border-bottom:0}
+</style></head>
+<body><div id="sheet">
+  <div class="band mast">
+    <div class="l">
+      <div class="kick">THE WORLD ON ONE SHEET · SEVEN REGIONS · NO. 20</div>
+      <div class="date">FRIDAY 20 NOVEMBER 2026</div>
+      <div class="strap">Everything here happened, or was first reported, on Friday 20 November 2026 — nothing carried over from the 19th, nothing dated the 21st or later.</div>
+    </div>
+    <div class="redblock"><div class="big">NOV 20</div><div class="sm">FRI</div></div>
+  </div>
+
+  <div class="band tally"><div data-region-tally="Europe"><b>5</b>Europe</div><div data-region-tally="Americas"><b>7</b>Americas</div><div data-region-tally="Asia"><b>8</b>Asia</div><div data-region-tally="Africa"><b>5</b>Africa</div><div data-region-tally="Middle East"><b>5</b>Middle East</div><div data-region-tally="Oceania"><b>4</b>Oceania</div><div data-region-tally="World"><b>7</b>World</div></div>
+
+  <div class="band numbers"><div class="n"><div class="v">400+</div><div class="lb">drones Russia fired overnight</div></div><div class="n"><div class="v">110+</div><div class="lb">missiles, 27 of them ballistic</div></div><div class="n"><div class="v">8</div><div class="lb">killed in Ukraine, 6 of them in Kyiv</div></div><div class="n"><div class="v">24.6m</div><div class="lb">GTA VI copies sold on day one</div></div><div class="n"><div class="v">$2.36bn</div><div class="lb">GTA VI’s first-day revenue</div></div><div class="n"><div class="v">$93.5bn</div><div class="lb">Anthropic’s IPO, the largest on record</div></div></div>
+
+  <div class="band leads"><div class="lead" data-region="Europe" data-beat="war" data-outlet="Reuters">
+      <div class="artbox" data-art="bridge"><svg aria-label="400 drones, 8 dead, three Kyiv bridges hit" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <rect x="0" y="70" width="160" height="26" fill="#a8842c"/>
+  <rect x="0" y="40" width="62" height="12" fill="#f4f0e6"/>
+  <rect x="98" y="40" width="62" height="12" fill="#f4f0e6"/>
+  <polygon points="62,52 98,52 90,70 70,70" fill="#f4f0e6"/>
+  <rect x="18" y="52" width="12" height="34" fill="#f4f0e6"/>
+  <rect x="130" y="52" width="12" height="34" fill="#f4f0e6"/>
+  <circle cx="132" cy="16" r="11" fill="#b21e22"/></svg></div>
+      <h2>400 drones, 8 dead, three Kyiv bridges hit</h2>
+      <div class="deck">110+ missiles, 27 of them ballistic, on energy and rail sites — Zelensky, Reuters</div>
+      <div class="ft">Reuters · Europe</div>
+    </div><div class="lead" data-region="Europe" data-beat="diplomacy" data-outlet="Reuters">
+      <div class="artbox" data-art="lecterns"><svg aria-label="Europe demands a seat; Moscow says no" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <rect x="0" y="72" width="160" height="24" fill="#a8842c"/>
+  <rect x="0" y="64" width="160" height="8" fill="#f4f0e6"/>
+  <rect x="66" y="68" width="10" height="28" fill="#f4f0e6"/>
+  <rect x="50" y="10" width="9" height="54" fill="#f4f0e6"/>
+  <rect x="101" y="10" width="9" height="54" fill="#f4f0e6"/>
+  <rect x="6" y="10" width="44" height="26" fill="#f4f0e6"/>
+  <rect x="110" y="10" width="44" height="26" fill="#b21e22"/></svg></div>
+      <h2>Europe demands a seat; Moscow says no</h2>
+      <div class="deck">Ryabkov rejects even a “quasi-NATO” formula for Kyiv — Reuters</div>
+      <div class="ft">Reuters · Europe</div>
+    </div><div class="lead" data-region="Americas" data-beat="markets" data-outlet="Reuters">
+      <div class="artbox" data-art="bars"><svg aria-label="Anthropic’s IPO haul rises to $93.5bn" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#f4f0e6"/>
+  <rect x="12" y="88" width="136" height="8" fill="#12100e"/>
+  <rect x="16" y="56" width="26" height="32" fill="#12100e"/>
+  <rect x="50" y="44" width="26" height="44" fill="#12100e"/>
+  <rect x="84" y="64" width="26" height="24" fill="#12100e"/>
+  <rect x="118" y="10" width="26" height="78" fill="#b21e22"/></svg></div>
+      <h2>Anthropic’s IPO haul rises to $93.5bn</h2>
+      <div class="deck">Greenshoe exercised on 980m shares at $83 — the largest listing on record</div>
+      <div class="ft">Reuters · Americas</div>
+    </div></div>
+
+  <div class="band bandrow"><div class="card" data-region="Asia" data-beat="diplomacy" data-outlet="Reuters">
+      <div class="artbox" data-art="ship"><svg aria-label="Xi and Albanese hail a turnaround" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <rect x="0" y="70" width="160" height="26" fill="#a8842c"/>
+  <polygon points="10,58 150,58 136,72 24,72" fill="#f4f0e6"/>
+  <rect x="118" y="40" width="22" height="18" fill="#f4f0e6"/>
+  <rect x="24" y="46" width="20" height="12" fill="#b21e22"/>
+  <rect x="46" y="46" width="20" height="12" fill="#f4f0e6"/>
+  <rect x="68" y="46" width="20" height="12" fill="#a8842c"/>
+  <rect x="90" y="46" width="20" height="12" fill="#f4f0e6"/>
+  <rect x="35" y="34" width="20" height="12" fill="#f4f0e6"/>
+  <rect x="57" y="34" width="20" height="12" fill="#b21e22"/>
+  <rect x="79" y="34" width="20" height="12" fill="#f4f0e6"/></svg></div>
+      <div class="tag" style="color:#a8842c">ASI · diplomacy</div>
+      <h3>Xi and Albanese hail a turnaround</h3>
+      <div class="cft">Reuters</div>
+    </div><div class="card" data-region="Americas" data-beat="media" data-outlet="Sensor Tower">
+      <div class="artbox" data-art="car"><svg aria-label="GTA VI: 24.6m copies in a day" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <rect x="0" y="62" width="160" height="34" fill="#a8842c"/>
+  <rect x="100" y="8" width="48" height="22" fill="#b21e22"/>
+  <rect x="12" y="34" width="9" height="28" fill="#f4f0e6"/>
+  <rect x="4" y="24" width="13" height="10" fill="#f4f0e6"/>
+  <rect x="18" y="24" width="13" height="10" fill="#f4f0e6"/>
+  <polygon points="52,62 60,42 104,42 114,62" fill="#f4f0e6"/>
+  <circle cx="68" cy="66" r="11" fill="#12100e"/>
+  <circle cx="98" cy="66" r="11" fill="#12100e"/></svg></div>
+      <div class="tag" style="color:#12100e">AME · media</div>
+      <h3>GTA VI: 24.6m copies in a day</h3>
+      <div class="cft">Sensor Tower</div>
+    </div><div class="card" data-region="Middle East" data-beat="energy" data-outlet="AP">
+      <div class="artbox" data-art="tanker"><svg aria-label="Two supertankers burn in Hormuz" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <rect x="0" y="68" width="160" height="28" fill="#a8842c"/>
+  <rect x="6" y="52" width="146" height="18" fill="#f4f0e6"/>
+  <rect x="112" y="28" width="18" height="26" fill="#f4f0e6"/>
+  <circle cx="30" cy="28" r="14" fill="#f4f0e6"/>
+  <circle cx="52" cy="16" r="11" fill="#f4f0e6"/>
+  <circle cx="18" cy="12" r="9" fill="#f4f0e6"/></svg></div>
+      <div class="tag" style="color:#12100e">MEA · energy</div>
+      <h3>Two supertankers burn in Hormuz</h3>
+      <div class="cft">AP</div>
+    </div><div class="card" data-region="Africa" data-beat="migration" data-outlet="Al Jazeera">
+      <div class="artbox" data-art="pirogue"><svg aria-label="Senegal boat capsizes, dozens missing" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <rect x="0" y="56" width="160" height="40" fill="#a8842c"/>
+  <path d="M12 54 Q80 18 148 54 Q80 66 12 54 Z" fill="#f4f0e6"/>
+  <rect x="24" y="76" width="76" height="10" fill="#f4f0e6" transform="rotate(-10 62 81)"/>
+  <rect x="96" y="78" width="14" height="10" fill="#b21e22"/></svg></div>
+      <div class="tag" style="color:#b21e22">AFR · migration</div>
+      <h3>Senegal boat capsizes, dozens missing</h3>
+      <div class="cft">Al Jazeera</div>
+    </div><div class="card" data-region="Oceania" data-beat="climate" data-outlet="PACNEWS">
+      <div class="artbox" data-art="atoll"><svg aria-label="Pacific turns on the COP31 draft" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <ellipse cx="80" cy="48" rx="72" ry="44" fill="#a8842c"/>
+  <ellipse cx="78" cy="46" rx="42" ry="23" fill="#f4f0e6"/>
+  <polygon points="128,60 160,74 160,96 122,84" fill="#12100e"/>
+  <polygon points="6,26 22,18 30,34 12,40" fill="#f4f0e6"/></svg></div>
+      <div class="tag" style="color:#a8842c">OCE · climate</div>
+      <h3>Pacific turns on the COP31 draft</h3>
+      <div class="cft">PACNEWS</div>
+    </div><div class="card" data-region="Europe" data-beat="war" data-outlet="Reuters">
+      <div class="artbox" data-art="cone"><svg aria-label="A Russian missile falls on Poland" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#f4f0e6"/>
+  <rect x="0" y="56" width="160" height="40" fill="#12100e"/>
+  <g transform="rotate(-10 72 62)">
+    <rect x="24" y="50" width="94" height="24" fill="#f4f0e6"/>
+    <polygon points="118,50 150,62 118,74" fill="#f4f0e6"/>
+    <rect x="34" y="32" width="15" height="20" fill="#f4f0e6"/>
+    <rect x="80" y="32" width="15" height="20" fill="#f4f0e6"/>
+    <rect x="58" y="50" width="14" height="24" fill="#b21e22"/>
+  </g>
+  <rect x="132" y="10" width="10" height="46" fill="#b21e22"/>
+  <rect x="126" y="10" width="22" height="10" fill="#f4f0e6"/></svg></div>
+      <div class="tag" style="color:#b21e22">EUR · war</div>
+      <h3>A Russian missile falls on Poland</h3>
+      <div class="cft">Reuters</div>
+    </div></div>
+
+  <div class="band bandrow b"><div class="card" data-region="Asia" data-beat="sport" data-outlet="FIFA">
+      <div class="artbox" data-art="football"><svg aria-label="Spain 5-0 China at the U-17 World Cup" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#a8842c"/>
+  <rect x="24" y="8" width="112" height="10" fill="#f4f0e6"/>
+  <rect x="24" y="8" width="10" height="46" fill="#f4f0e6"/>
+  <rect x="126" y="8" width="10" height="46" fill="#f4f0e6"/>
+  <rect x="34" y="46" width="92" height="8" fill="#f4f0e6"/>
+  <circle cx="80" cy="70" r="18" fill="#12100e"/>
+  <rect x="70" y="62" width="20" height="16" fill="#f4f0e6"/>
+  <rect x="72" y="84" width="16" height="8" fill="#b21e22"/></svg></div>
+      <div class="tag" style="color:#a8842c">ASI · sport</div>
+      <h3>Spain 5-0 China at the U-17 World Cup</h3>
+      <div class="cft">FIFA</div>
+    </div><div class="card" data-region="Middle East" data-beat="war" data-outlet="NNA">
+      <div class="artbox" data-art="bunker"><svg aria-label="Israel strikes a Bekaa missile site" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#a8842c"/>
+  <rect x="0" y="0" width="160" height="30" fill="#12100e"/>
+  <rect x="0" y="30" width="160" height="8" fill="#f4f0e6"/>
+  <rect x="22" y="38" width="116" height="40" fill="#f4f0e6"/>
+  <rect x="66" y="48" width="28" height="30" fill="#12100e"/>
+  <rect x="0" y="78" width="160" height="18" fill="#12100e"/></svg></div>
+      <div class="tag" style="color:#12100e">MEA · war</div>
+      <h3>Israel strikes a Bekaa missile site</h3>
+      <div class="cft">NNA</div>
+    </div><div class="card" data-region="Africa" data-beat="markets" data-outlet="eriinfo">
+      <div class="artbox" data-art="excavator"><svg aria-label="Kenya’s $60bn minerals tender won" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#b21e22"/>
+  <rect x="0" y="0" width="160" height="34" fill="#f4f0e6"/>
+  <rect x="14" y="64" width="56" height="32" fill="#12100e"/>
+  <rect x="34" y="40" width="14" height="26" fill="#12100e"/>
+  <rect x="40" y="30" width="66" height="14" fill="#12100e" transform="rotate(-18 44 38)"/>
+  <polygon points="100,16 140,16 140,54 100,54" fill="#12100e"/>
+  <rect x="110" y="26" width="20" height="12" fill="#a8842c"/></svg></div>
+      <div class="tag" style="color:#b21e22">AFR · markets</div>
+      <h3>Kenya’s $60bn minerals tender won</h3>
+      <div class="cft">eriinfo</div>
+    </div><div class="card" data-region="World" data-beat="health" data-outlet="Nature Genetics">
+      <div class="artbox" data-art="helix"><svg aria-label="58 genomic regions for endometriosis" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#f4f0e6"/>
+  <path d="M44 4 Q112 26 44 48 Q112 70 44 92" fill="none" stroke="#b21e22" stroke-width="14"/>
+  <path d="M116 4 Q48 26 116 48 Q48 70 116 92" fill="none" stroke="#12100e" stroke-width="14"/>
+  <rect x="62" y="30" width="38" height="11" fill="#12100e"/>
+  <rect x="62" y="56" width="38" height="11" fill="#b21e22"/></svg></div>
+      <div class="tag" style="color:#b21e22">WLD · health</div>
+      <h3>58 genomic regions for endometriosis</h3>
+      <div class="cft">Nature Genetics</div>
+    </div><div class="card" data-region="Americas" data-beat="domestic politics" data-outlet="AP">
+      <div class="artbox" data-art="ballot"><svg aria-label="Peltola takes Alaska; 56 Senate seats" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#f4f0e6"/>
+  <polygon points="0,72 40,26 80,72" fill="#a8842c"/>
+  <polygon points="52,72 96,18 144,72" fill="#12100e"/>
+  <rect x="24" y="60" width="112" height="36" fill="#12100e"/>
+  <rect x="40" y="46" width="80" height="20" fill="#f4f0e6"/>
+  <rect x="40" y="20" width="80" height="28" fill="#f4f0e6"/>
+  <rect x="49" y="26" width="62" height="8" fill="#b21e22"/>
+  <rect x="49" y="38" width="40" height="6" fill="#12100e"/>
+  <rect x="40" y="46" width="80" height="7" fill="#b21e22"/></svg></div>
+      <div class="tag" style="color:#12100e">AME · domestic politics</div>
+      <h3>Peltola takes Alaska; 56 Senate seats</h3>
+      <div class="cft">AP</div>
+    </div><div class="card" data-region="World" data-beat="technology" data-outlet="CNN">
+      <div class="artbox" data-art="server"><svg aria-label="US cyber chief replaced mid-outage" viewBox="0 0 160 96" width="100%" height="100%" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <rect x="0" y="0" width="160" height="96" fill="#12100e"/>
+  <rect x="32" y="4" width="96" height="88" fill="#f4f0e6"/>
+  <rect x="44" y="14" width="72" height="14" fill="#12100e"/>
+  <rect x="44" y="34" width="72" height="14" fill="#12100e"/>
+  <rect x="44" y="54" width="72" height="14" fill="#12100e"/>
+  <rect x="44" y="74" width="72" height="12" fill="#12100e"/>
+  <rect x="100" y="17" width="10" height="9" fill="#b21e22"/>
+  <rect x="100" y="37" width="10" height="9" fill="#a8842c"/>
+  <rect x="100" y="57" width="10" height="9" fill="#a8842c"/></svg></div>
+      <div class="tag" style="color:#b21e22">WLD · technology</div>
+      <h3>US cyber chief replaced mid-outage</h3>
+      <div class="cft">CNN</div>
+    </div></div>
+
+  <div class="band briefs">
+    <div class="bh"><span>Briefly · the rest of the day</span><span>26 items · 41 stories on this sheet · 14 beats</span></div>
+    <div class="bcols"><div class="brief" data-region="Europe" data-beat="markets" data-outlet="Reuters"><span class="rt">EUR</span>NATO reaffirms EUR 70bn of aid for 2026 <span class="ot">Reuters</span></div><div class="brief" data-region="Europe" data-beat="energy" data-outlet="Nekrasov"><span class="rt">EUR</span>Blackouts in Kyiv and ten regions <span class="ot">Nekrasov</span></div><div class="brief" data-region="Asia" data-beat="diplomacy" data-outlet="China MFA"><span class="rt">ASI</span>Beijing to Tokyo: correct your words <span class="ot">China MFA</span></div><div class="brief" data-region="Asia" data-beat="diplomacy" data-outlet="NPR"><span class="rt">ASI</span>Trump briefs Takaichi on the summit <span class="ot">NPR</span></div><div class="brief" data-region="Asia" data-beat="disaster" data-outlet="IMD"><span class="rt">ASI</span>Akvan hits Odisha; 300,000 moved out <span class="ot">IMD</span></div><div class="brief" data-region="Asia" data-beat="diplomacy" data-outlet="Nepal FSec"><span class="rt">ASI</span>Nepal PM visits India on 22 November <span class="ot">Nepal FSec</span></div><div class="brief" data-region="Asia" data-beat="markets" data-outlet="Trade Min."><span class="rt">ASI</span>PNG opens a consulate in Guangzhou <span class="ot">Trade Min.</span></div><div class="brief" data-region="Asia" data-beat="science" data-outlet="Nature Cancer"><span class="rt">ASI</span>47,000 tissue slides train a model <span class="ot">Nature Cancer</span></div><div class="brief" data-region="Americas" data-beat="courts" data-outlet="Democracy Now"><span class="rt">AME</span>Court lets Venezuela TPS end, for now <span class="ot">Democracy Now</span></div><div class="brief" data-region="Americas" data-beat="climate" data-outlet="Al Jazeera"><span class="rt">AME</span>Brazil recognises 362,000 hectares <span class="ot">Al Jazeera</span></div><div class="brief" data-region="Americas" data-beat="domestic politics" data-outlet="Al Jazeera"><span class="rt">AME</span>Bogota marches against a tax bill <span class="ot">Al Jazeera</span></div><div class="brief" data-region="Americas" data-beat="courts" data-outlet="Democracy Now"><span class="rt">AME</span>A judge holds ICE in contempt <span class="ot">Democracy Now</span></div><div class="brief" data-region="Africa" data-beat="war" data-outlet="Save the Children"><span class="rt">AFR</span>260m children live near fighting <span class="ot">Save the Children</span></div><div class="brief" data-region="Africa" data-beat="diplomacy" data-outlet="eriinfo"><span class="rt">AFR</span>Somalia expels the UAE ambassador <span class="ot">eriinfo</span></div><div class="brief" data-region="Africa" data-beat="markets" data-outlet="eriinfo"><span class="rt">AFR</span>ZWG59.5bn for security ministries <span class="ot">eriinfo</span></div><div class="brief" data-region="World" data-beat="climate" data-outlet="UN News"><span class="rt">WLD</span>UN: progress on 44 of 96 indicators <span class="ot">UN News</span></div><div class="brief" data-region="Middle East" data-beat="war" data-outlet="Reuters"><span class="rt">MEA</span>Militiamen quit Jurf al-Sakhar <span class="ot">Reuters</span></div><div class="brief" data-region="Middle East" data-beat="domestic politics" data-outlet="AP"><span class="rt">MEA</span>Senate keeps the Iran war going, 51-48 <span class="ot">AP</span></div><div class="brief" data-region="Middle East" data-beat="war" data-outlet="AP"><span class="rt">MEA</span>Yemen strikes kill 15; debris hits Riyadh <span class="ot">AP</span></div><div class="brief" data-region="Oceania" data-beat="sport" data-outlet="LiveScore"><span class="rt">OCE</span>Wellington: NZ 368, India 68 for none <span class="ot">LiveScore</span></div><div class="brief" data-region="Oceania" data-beat="sport" data-outlet="CricketSky"><span class="rt">OCE</span>Strikers beat the Renegades by five <span class="ot">CricketSky</span></div><div class="brief" data-region="Oceania" data-beat="migration" data-outlet="Fiji NPP"><span class="rt">OCE</span>Fiji: 48,078 left in a single year <span class="ot">Fiji NPP</span></div><div class="brief" data-region="World" data-beat="courts" data-outlet="eriinfo"><span class="rt">WLD</span>South Africa faces an arms inquiry <span class="ot">eriinfo</span></div><div class="brief" data-region="World" data-beat="energy" data-outlet="Fortune"><span class="rt">WLD</span>Brent at $92.57 as Hormuz grinds on <span class="ot">Fortune</span></div><div class="brief" data-region="World" data-beat="science" data-outlet="Nature"><span class="rt">WLD</span>221 papers describe impossible proteins <span class="ot">Nature</span></div><div class="brief" data-region="World" data-beat="domestic politics" data-outlet="Democracy Now"><span class="rt">WLD</span>Driver run down with his own car <span class="ot">Democracy Now</span></div></div>
+  </div>
+
+  <div class="band dc">
+    <div class="dcr">DATE CHECK — the rule: every item here is dated, or was first reported, on 20 November 2026. Six held out:</div>
+    <div class="cols"><div class="ex"><b>1.</b> The Shenzhen trilateral summit — held 19 November, not the 20th.</div><div class="ex"><b>2.</b> “Declaration toward Peace” — signed 19 November.</div><div class="ex"><b>3.</b> The ICJ Myanmar genocide ruling — given 19 November; only its 20th fallout is in.</div><div class="ex"><b>4.</b> Hegseth in Caracas and the US-Venezuela pact — 18 November.</div><div class="ex"><b>5.</b> The Riyadh tower strike — 19 November.</div><div class="ex"><b>6.</b> Anything dated 21 November or later.</div></div>
+  </div>
+
+  <div class="band foot"><span>The World on One Sheet · FRIDAY 20 NOVEMBER 2026</span><span>41 stories · 7 regions · 2026-11-20</span></div>
+</div></body></html>

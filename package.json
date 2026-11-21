@@ -1,0 +1,26 @@
+{
+  "name": "newsrepo20",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FRIDAY 20 NOVEMBER 2026 — a one-sheet broadsheet of the day's world news, drawn as a 1024x1024 PNG.",
+  "type": "module",
+  "main": "main.ts",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node compose.mjs",
+    "start": "node --experimental-strip-types main.ts",
+    "shot": "node compose.mjs && node --experimental-strip-types main.ts",
+    "test": "node --experimental-strip-types main.ts"
+  },
+  "keywords": [
+    "makefun",
+    "newspaper",
+    "one-sheet",
+    "news",
+    "svg",
+    "headless-chrome"
+  ],
+  "license": "MIT"
+}
