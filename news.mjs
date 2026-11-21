@@ -125,10 +125,10 @@ export const STORIES = [
     headline: 'South Africa faces an arms inquiry', outlet: 'eriinfo' },
   { n: 31, region: 'World', tag: 'WLD', beat: 'energy', slot: 'brief', art: null,
     headline: 'Brent at $92.57 as Hormuz grinds on', outlet: 'Fortune' },
-  { n: 46, region: 'Europe', tag: 'EUR', beat: 'science', slot: 'brief', art: null,
-    headline: 'UK joins Erasmus+ from 2027', outlet: 'GOV.UK' },
-  { n: 47, region: 'Europe', tag: 'EUR', beat: 'health', slot: 'brief', art: null,
-    headline: 'EU and UK link carbon markets by 2028', outlet: 'GOV.UK' },
+  { n: 46, region: 'Europe', tag: 'EUR', beat: 'diplomacy', slot: 'brief', art: null,
+    headline: 'Erasmus+ opens to UK students in 2027', outlet: 'GOV.UK' },
+  { n: 47, region: 'Europe', tag: 'EUR', beat: 'energy', slot: 'brief', art: null,
+    headline: 'UK and EU link carbon markets by 2028', outlet: 'GOV.UK' },
 ];
 
 export const NUMBERS = [
