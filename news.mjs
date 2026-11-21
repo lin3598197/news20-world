@@ -39,7 +39,7 @@ export const STORIES = [
       outlet: 'Reuters',
     },
     {
-      n: 5, region: 'Europe', tag: 'EUR', beat: 'diplomacy', slot: 'lead', art: 'lecterns',
+      n: 5, region: 'Europe', tag: 'EUR', beat: 'diplomacy', slot: 'bandA', art: 'lecterns',
       headline: 'Europe demands a seat; Moscow says no',
       deck: 'Ryabkov rejects even a \u201cquasi-NATO\u201d formula for Kyiv \u2014 Reuters',
       outlet: 'Reuters',
@@ -52,7 +52,7 @@ export const STORIES = [
     },
 
     // ================= BAND A (drawn) =================
-    { n: 7, region: 'Asia', tag: 'ASI', beat: 'disaster', slot: 'bandA', art: 'cyclone',
+    { n: 7, region: 'Asia', tag: 'ASI', beat: 'disaster', slot: 'lead', art: 'cyclone',
       headline: 'Cyclone Akvan lands in Odisha; 300,000 moved out',
       outlet: 'IMD' },
     { n: 22, region: 'Africa', tag: 'AFR', beat: 'migration', slot: 'bandA', art: 'pirogue',
