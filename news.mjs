@@ -141,12 +141,12 @@ export const NUMBERS = [
 ];
 
 export const EXCLUDED = [
-  'The Shenzhen trilateral summit \u2014 held 19 November, not the 20th.',
-  '\u201cDeclaration toward Peace\u201d \u2014 signed 19 November.',
-  'The ICJ Myanmar genocide ruling \u2014 given 19 November; only its 20th fallout is in.',
-  'Hegseth in Caracas and the US-Venezuela pact \u2014 18 November.',
-  'The Riyadh tower strike \u2014 19 November.',
-  'Anything dated 21 November or later.',
+  'Shenzhen trilateral summit \u2014 held 19 Nov.',
+  '\u201cDeclaration toward Peace\u201d \u2014 signed 19 Nov.',
+  'ICJ Myanmar genocide ruling \u2014 given 19 Nov.',
+  'Hegseth in Caracas, US-Venezuela pact \u2014 18 Nov.',
+  'Riyadh tower strike \u2014 19 Nov.',
+  'Anything dated 21 Nov or later.',
 ];
 
 export function counts() {

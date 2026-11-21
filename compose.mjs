@@ -21,8 +21,8 @@ const B = {
   bandA: 162,
   bandB: 162,
   briefs: 279,
-  datecheck: 56,
-  footer: 13,
+  datecheck: 42,
+  footer: 0,
 };
 const BAND_SUM = Object.values(B).reduce((a, b) => a + b, 0);
 
@@ -100,7 +100,7 @@ html,body{width:${W}px;height:${H}px;overflow:hidden;background:#f4f0e6;color:#1
   border-bottom:1px solid #12100e}
 .dc .dcr{font-family:Arial,Helvetica,sans-serif;font-size:9.4px;line-height:11.5px;font-weight:700;
   margin-bottom:2px}
-.dc .cols{columns:2;column-gap:16px}
+.dc .cols{columns:3;column-gap:14px}
 .dc .ex{font-family:"Segoe UI",Arial,sans-serif;font-size:9px;line-height:11px}
 .dc .ex b{color:#b21e22}
 
@@ -173,7 +173,7 @@ function buildHtml() {
   </div>
 
   <div class="band dc">
-    <div class="dcr">DATE CHECK \u2014 the rule: every item here is dated, or was first reported, on 20 November 2026. Six held out:</div>
+    <div class="dcr">DATE CHECK \u2014 every item is dated, or first reported, 20 November 2026. Held out:</div>
     <div class="cols">${EXCLUDED.map((e, i) => `<div class="ex"><b>${i + 1}.</b> ${esc(e)}</div>`).join('')}</div>
   </div>
 

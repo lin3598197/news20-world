@@ -5,3 +5,8 @@ s300c.png
 s512c.png
 .chrome-profile/
 *.svg
+_v.png
+p_*.png
+png_*.png
+s_*.svg
+svg_*.svg
