@@ -1,7 +1,17 @@
 # newsrepo20 — FRIDAY 20 NOVEMBER 2026
 
+[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![rank](https://make.fun/badge/news-image-20261120/lin3598197/news20-world/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![reward](https://make.fun/badge/news-image-20261120/lin3598197/news20-world/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+
 One 1024 x 1024 PNG that sums up Friday 20 November 2026's world news, built as a
-broadsheet front page: paper, ink, one red, one gold.
+broadsheet front page: paper, ink, one red, one gold. Entered in make.fun's
+[“Sum up 20 November's world news in one image”](https://make.fun/bounty/news-image-20261120) bounty.
+
+```bash
+node compose.mjs                              # draws page.html, rasterises entry.png
+MAKEFUN_OUTPUT_DIR=out node --experimental-strip-types main.ts
+```
 
 The judge scores two things, in order. First, does the sheet name its day
 unambiguously and show that it checked the date. Second, breadth — how many
